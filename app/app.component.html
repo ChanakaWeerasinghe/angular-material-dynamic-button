@@ -1,0 +1,24 @@
+<md-toolbar color="primary">
+  <span>Angular Material Components</span>
+</md-toolbar>
+<md-toolbar>
+  <span>Buttons</span>
+</md-toolbar>
+
+<md-tab-group>
+ 
+
+  <md-tab label="Raised Buttons">
+    <br />
+    <div class="button-row">
+      <button md-raised-button *ngFor="let item of items; let i = index" 
+  (click)="changeActive(i)"
+  #disable>
+  {{item.name}} Basic</button>
+      
+    </div>
+    <br />
+  </md-tab>
+ 
+</md-tab-group>
+ 
